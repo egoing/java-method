@@ -3,19 +3,20 @@ public class WhyMethod {
 	
 	public static void main(String[] args) {
 		
-		// 100000000
-		printTwoTimesA();
-		// 100000000
-		printTwoTimesA();
-		// 100000000
-		printTwoTimesA();
+			             //인자, argument
+			printTwoTimes("a", "-");
+			// 100000000
+			printTwoTimes("a", "*");
+			// 100000000
+			printTwoTimes("a", "&");
+			printTwoTimes("b", "!");
 
 	}
-
-	public static void printTwoTimesA() {
-		System.out.println("-");
-		System.out.println("a");
-		System.out.println("a");
+								     //매개변수,parameter 
+	public static void printTwoTimes(String text, String delimiter) {
+		System.out.println(delimiter);
+		System.out.println(text);
+		System.out.println(text);
 	}
 
 }
